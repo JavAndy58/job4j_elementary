@@ -11,6 +11,7 @@ public class ChessBoard {
                     y1 >= 0 && y1 <= 7 && y2 >= 0 && y2 <= 7;
             rsl = start ? calculX : 0;
         }
+
         return rsl;
     }
 
