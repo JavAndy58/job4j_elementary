@@ -25,11 +25,19 @@ public class MatrixCheck {
                 }
             }
         }
-
         return result;
     }
 
+    public static char[] extractDiagonal(char[][] board) {
+        char[] rsl = new char[board.length];
+        for (int i = 0; i < board.length; i++) {
+            rsl[i] = board[i][i];
+        }
+        return rsl;
+    }
+
     public static void main(String[] args) {
+
         char[][] ch = {
                 {' ', ' ', ' '},
                 {'X', 'X', 'X'},
@@ -40,8 +48,14 @@ public class MatrixCheck {
                 {' ', ' ', 'X'},
                 {' ', ' ', 'X'}
         };
+        char[][] ch3 = {
+                {'1', ' ', ' '},
+                {' ', '1', ' '},
+                {' ', ' ', '1'},
+        };
 
         System.out.println(monoHorizontal(ch, 1));
         System.out.println(monoVertical(ch2, 2));
+        System.out.println(extractDiagonal(ch3));
     }
 }
