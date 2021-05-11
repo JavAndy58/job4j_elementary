@@ -9,10 +9,10 @@ public class Machine {
         int size = 0;
         int surrender = money - price;
 
-        for (int i : coins) {
-            while (surrender - i  >= 0) {
-                rsl[size] = i;
-                surrender -= i;
+        for (int coin : coins) {
+            while (surrender - coin  >= 0) {
+                rsl[size] = coin;
+                surrender -= coin;
                 size++;
             }
         }
