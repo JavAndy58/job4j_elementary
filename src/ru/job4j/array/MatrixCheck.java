@@ -8,10 +8,8 @@ public class MatrixCheck {
             if (board[i][i] == 'X' && (monoHorizontal(board, i) || monoVertical(board, i))) {
                     result = true;
                     break;
-
             }
         }
-
         return result;
     }
 
@@ -46,7 +44,6 @@ public class MatrixCheck {
     }
 
     public static void main(String[] args) {
-
         char[][] ch = {
                 {' ', ' ', ' '},
                 {'X', 'X', 'X'},
@@ -62,7 +59,6 @@ public class MatrixCheck {
                 {' ', '1', ' '},
                 {' ', ' ', '1'},
         };
-
         System.out.println(monoHorizontal(ch, 1));
         System.out.println(monoVertical(ch2, 2));
         System.out.println(extractDiagonal(ch3));
