@@ -24,6 +24,5 @@ public class SkipNegative {
             }
             System.out.println();
         }
-
     }
 }

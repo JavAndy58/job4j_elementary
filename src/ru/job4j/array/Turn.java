@@ -16,6 +16,5 @@ public class Turn {
         for(int i: str){
             System.out.print(i + " ");
         }
-
     }
 }

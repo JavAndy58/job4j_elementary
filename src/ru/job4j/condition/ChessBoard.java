@@ -5,7 +5,6 @@ public class ChessBoard {
         int rsl = 0;
         boolean start = x1 >= 0 && x1 <= 7 && x2 >= 0 && x2 <= 7 &&
                 y1 >= 0 && y1 <= 7 && y2 >= 0 && y2 <= 7;
-
         if (start) {
             int calculX = Math.abs(x2 - x1);
             int calculY = Math.abs(y2 - y1);
