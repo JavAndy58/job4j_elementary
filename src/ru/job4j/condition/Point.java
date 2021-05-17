@@ -23,5 +23,6 @@ public class Point {
         Point b = new Point(0, 2);
         double dist = a.distance(b);
         System.out.println(dist);
+
     }
 }
