@@ -7,13 +7,12 @@ public class Max {
     }
 
     public static int max(int num1, int num2, int num3) {
-        int temp = max(num1, num2);
-        return max(temp, num3);
+        return max(max(num1, num2), num3);
     }
 
     public static int max(int num1, int num2, int num3, int num4) {
-        int temp = max(num1, num2, num3);
-        return max(temp, num4);
+
+        return max(max(max(num1, num2), num3), num4);
     }
 
     public static void main(String[] args) {
